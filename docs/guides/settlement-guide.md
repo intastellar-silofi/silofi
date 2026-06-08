@@ -23,7 +23,7 @@ Confirm:
 
 ## What Happens On Settle
 
-1. StellarCrop fetches all current token holders from Horizon.
+1. SiloFi fetches all current token holders from Horizon.
 2. It calculates each holder's pro-rata share: `holderBalance / totalSupply * saleProceeds`.
 3. It builds a batched Stellar transaction distributing proceeds to each holder.
 4. For large holder counts, this flow needs the Soroban proceeds distribution contract, which is not yet implemented.

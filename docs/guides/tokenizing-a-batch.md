@@ -6,7 +6,7 @@ Tokenization converts a registered Batch into Stellar tokens. This is when the b
 
 ## Token Design
 
-StellarCrop maps commodities to Stellar assets:
+SiloFi maps commodities to Stellar assets:
 
 - 1 token = 1 unit of the Commodity, such as 1 kg of maize.
 - Total supply = total weight of the Batch.
@@ -18,7 +18,7 @@ Stellar native asset issuance does not require a smart contract. The Warehouse i
 
 ## Compliance Flags
 
-| Flag                    | Default | Meaning for StellarCrop                                           |
+| Flag                    | Default | Meaning for SiloFi                                                |
 | ----------------------- | ------- | ----------------------------------------------------------------- |
 | Authorization Required  | On      | Investors must be KYC-approved before receiving tokens.           |
 | Authorization Revocable | On      | The Warehouse can freeze an Investor trustline during a dispute.  |
@@ -38,7 +38,7 @@ The distributor wallet defaults to the connected Freighter wallet. You can use a
 
 ## What Happens On Tokenize
 
-1. StellarCrop builds a Stellar transaction with `createAccount` if the distributor is new, `changeTrust`, `payment` to issue full supply to the distributor, `setOptions` for compliance flags, and a document hash memo or data entry for custody proof.
+1. SiloFi builds a Stellar transaction with `createAccount` if the distributor is new, `changeTrust`, `payment` to issue full supply to the distributor, `setOptions` for compliance flags, and a document hash memo or data entry for custody proof.
 2. Freighter presents the transaction for signing.
 3. After confirmation, the Batch transitions to `tokenized`.
 4. The asset is live on Stellar and can be verified on Stellar Expert.

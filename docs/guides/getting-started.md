@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide gets you from a fresh clone to a working local StellarCrop environment. By the end, you will have the API and web app running locally and you will understand the flow for registering a test Batch on Stellar testnet.
+This guide gets you from a fresh clone to a working local SiloFi environment. By the end, you will have the API and web app running locally and you will understand the flow for registering a test Batch on Stellar testnet.
 
 ## Prerequisites
 
@@ -33,8 +33,8 @@ This guide gets you from a fresh clone to a working local StellarCrop environmen
 ## Clone And Install
 
 ```sh
-git clone https://github.com/your-org/stellarcrop.git
-cd stellarcrop
+git clone https://github.com/your-org/silofi.git
+cd silofi
 pnpm install
 ```
 
@@ -49,20 +49,20 @@ cp apps/web/.env.example apps/web/.env
 
 Set these API variables before booting:
 
-| Variable                 | Required | Description                                                  |
-| ------------------------ | -------- | ------------------------------------------------------------ |
-| `DATABASE_URL`           | Yes      | PostgreSQL connection string for the `stellarcrop` database. |
-| `JWT_SECRET`             | Yes      | Local secret for signing API tokens.                         |
-| `JWT_EXPIRY`             | Yes      | Token expiry, usually `7d` locally.                          |
-| `STELLAR_NETWORK`        | Yes      | Use `testnet` for development.                               |
-| `STELLAR_HORIZON_URL`    | Yes      | Use `https://horizon-testnet.stellar.org` for testnet.       |
-| `STELLAR_RPC_URL`        | Optional | Soroban RPC URL for future contract calls.                   |
-| `SUMSUB_SECRET_KEY`      | Optional | Sumsub webhook signing secret.                               |
-| `SUMSUB_APP_TOKEN`       | Optional | Sumsub API app token.                                        |
-| `PERSONA_API_KEY`        | Optional | Persona API key.                                             |
-| `PERSONA_WEBHOOK_SECRET` | Optional | Persona webhook secret.                                      |
-| `STORAGE_DRIVER`         | Optional | Defaults to local document storage.                          |
-| `PORT`                   | Optional | API port, usually `3000`.                                    |
+| Variable                 | Required | Description                                             |
+| ------------------------ | -------- | ------------------------------------------------------- |
+| `DATABASE_URL`           | Yes      | PostgreSQL connection string for the `silofi` database. |
+| `JWT_SECRET`             | Yes      | Local secret for signing API tokens.                    |
+| `JWT_EXPIRY`             | Yes      | Token expiry, usually `7d` locally.                     |
+| `STELLAR_NETWORK`        | Yes      | Use `testnet` for development.                          |
+| `STELLAR_HORIZON_URL`    | Yes      | Use `https://horizon-testnet.stellar.org` for testnet.  |
+| `STELLAR_RPC_URL`        | Optional | Soroban RPC URL for future contract calls.              |
+| `SUMSUB_SECRET_KEY`      | Optional | Sumsub webhook signing secret.                          |
+| `SUMSUB_APP_TOKEN`       | Optional | Sumsub API app token.                                   |
+| `PERSONA_API_KEY`        | Optional | Persona API key.                                        |
+| `PERSONA_WEBHOOK_SECRET` | Optional | Persona webhook secret.                                 |
+| `STORAGE_DRIVER`         | Optional | Defaults to local document storage.                     |
+| `PORT`                   | Optional | API port, usually `3000`.                               |
 
 Set these web variables:
 
@@ -74,8 +74,8 @@ Set these web variables:
 ## Database Setup
 
 ```sh
-createdb stellarcrop
-pnpm --filter @stellarcrop/api ark migrate
+createdb silofi
+pnpm --filter @silofi/api ark migrate
 ```
 
 ## Start Dev Servers

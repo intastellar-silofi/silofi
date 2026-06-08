@@ -2,7 +2,7 @@
 
 ## Who Is This Guide For?
 
-This guide is for anyone who wants to invest in tokenized agricultural commodities on StellarCrop: individual Investors, diaspora Investors, agri-funds, and Cooperative members.
+This guide is for anyone who wants to invest in tokenized agricultural commodities on SiloFi: individual Investors, diaspora Investors, agri-funds, and Cooperative members.
 
 ## Prerequisites
 
@@ -14,9 +14,9 @@ You need:
 
 ## KYC Requirement
 
-KYC is required because StellarCrop uses Stellar's Authorization Required flag. The Warehouse operator must approve your Stellar address before you can receive Batch tokens. KYC verifies your identity before that on-chain approval.
+KYC is required because SiloFi uses Stellar's Authorization Required flag. The Warehouse operator must approve your Stellar address before you can receive Batch tokens. KYC verifies your identity before that on-chain approval.
 
-StellarCrop integrates with Sumsub and Persona. The specific provider depends on the Operator's configuration.
+SiloFi integrates with Sumsub and Persona. The specific provider depends on the Operator's configuration.
 
 ## The KYC Flow
 

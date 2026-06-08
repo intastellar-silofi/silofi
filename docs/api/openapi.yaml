@@ -1,8 +1,8 @@
 openapi: 3.1.0
 info:
-  title: StellarCrop API
+  title: SiloFi API
   version: 0.1.0
-  description: REST API for StellarCrop, an open-source platform for tokenized agricultural warehouse receipts on Stellar.
+  description: REST API for SiloFi, an open-source platform for tokenized agricultural warehouse receipts on Stellar.
 servers:
   - url: http://localhost:3000
 security:

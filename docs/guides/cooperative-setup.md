@@ -1,6 +1,6 @@
 # Cooperative Setup
 
-## What Is A Cooperative In StellarCrop?
+## What Is A Cooperative In SiloFi?
 
 A Cooperative is a group of individual farmers who pool their harvests under one issuer account. The Cooperative manages token issuance centrally, and revenue from settled Batches is split between the Cooperative treasury and the individual farmer who contributed the Batch.
 
@@ -35,7 +35,7 @@ Members are added by Stellar public key. They can view their own Batches and pro
 
 ## Cooperative Treasury
 
-Settlement proceeds allocated to the Cooperative accumulate in the Cooperative Stellar account. Disbursement to members for shared equipment, input subsidies, or other programs is outside StellarCrop's scope and happens off-platform.
+Settlement proceeds allocated to the Cooperative accumulate in the Cooperative Stellar account. Disbursement to members for shared equipment, input subsidies, or other programs is outside SiloFi's scope and happens off-platform.
 
 ## Revenue Split Configuration
 

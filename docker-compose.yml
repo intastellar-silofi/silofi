@@ -2,11 +2,11 @@ services:
   db:
     image: postgres:16-alpine
     environment:
-      POSTGRES_USER: stellarcrop
-      POSTGRES_PASSWORD: stellarcrop
-      POSTGRES_DB: stellarcrop
+      POSTGRES_USER: silofi
+      POSTGRES_PASSWORD: silofi
+      POSTGRES_DB: silofi
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -14,7 +14,7 @@ services:
     build:
       context: ./apps/api
     ports:
-      - "3000:3000"
+      - '3000:3000'
     env_file:
       - ./apps/api/.env
     depends_on:
@@ -24,7 +24,7 @@ services:
     build:
       context: ./apps/web
     ports:
-      - "3001:3000"
+      - '3001:3000'
     env_file:
       - ./apps/web/.env
     depends_on:

@@ -32,7 +32,7 @@ An Investor can redeem a portion of their balance. Remaining tokens stay in thei
 
 ## What Gets Anchored On-Chain
 
-When a Redemption is approved, StellarCrop submits a Stellar transaction with the Redemption voucher hash in the memo field. This creates a permanent on-chain proof of physical delivery.
+When a Redemption is approved, SiloFi submits a Stellar transaction with the Redemption voucher hash in the memo field. This creates a permanent on-chain proof of physical delivery.
 
 ## The Soroban Dependency
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The KYC flow in StellarCrop is: Investor connects wallet, requests access to a Batch, completes KYC through a provider widget, passes verification, receives on-chain trustline authorization, and can purchase Batch tokens.
+The KYC flow in SiloFi is: Investor connects wallet, requests access to a Batch, completes KYC through a provider widget, passes verification, receives on-chain trustline authorization, and can purchase Batch tokens.
 
 ## Architecture
 

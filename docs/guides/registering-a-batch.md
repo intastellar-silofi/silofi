@@ -2,7 +2,7 @@
 
 ## What Is Batch Registration?
 
-Batch registration is the first step in the StellarCrop lifecycle. You create an off-chain record of a physical Commodity lot before issuing tokens. There is no blockchain interaction yet; the goal is to capture custody, quality, Warehouse, and document information accurately.
+Batch registration is the first step in the SiloFi lifecycle. You create an off-chain record of a physical Commodity lot before issuing tokens. There is no blockchain interaction yet; the goal is to capture custody, quality, Warehouse, and document information accurately.
 
 ## Before You Start
 
@@ -60,4 +60,4 @@ The Batch is in `registered` state. It appears in your Operator dashboard but is
 
 ## What Gets Stored
 
-StellarCrop stores a `Batch` record in PostgreSQL and stores the uploaded documents in local storage by default. Production deployments can use cloud storage when that contributor task is implemented. Nothing is on Stellar until tokenization.
+SiloFi stores a `Batch` record in PostgreSQL and stores the uploaded documents in local storage by default. Production deployments can use cloud storage when that contributor task is implemented. Nothing is on Stellar until tokenization.
