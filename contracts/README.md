@@ -1,6 +1,6 @@
-# StellarCrop Contracts
+# SiloFi Contracts
 
-This workspace contains Soroban smart contracts for StellarCrop.
+This workspace contains Soroban smart contracts for SiloFi.
 
 The first contract, `test-contract`, is intentionally small. It proves that the contracts workspace is wired correctly and gives contributors a working pattern for future contracts.
 
@@ -29,7 +29,7 @@ Future contributors can add contracts for:
 
 - Proceeds distribution during Settlement.
 - Redemption voucher and clawback coordination.
-- Other narrowly scoped StellarCrop workflows that benefit from Soroban.
+- Other narrowly scoped SiloFi workflows that benefit from Soroban.
 
 ## Commands
 
