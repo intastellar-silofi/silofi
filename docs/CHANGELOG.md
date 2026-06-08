@@ -2,7 +2,7 @@
 
 ## About This Changelog
 
-This changelog follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and StellarCrop follows [Semantic Versioning](https://semver.org/).
+This changelog follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and SiloFi follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
@@ -35,8 +35,8 @@ This changelog follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 ### Added
 
 - pnpm workspace monorepo with `apps/api`, `apps/web`, and `docs`.
-- Arkstack Express API bootstrap for `@stellarcrop/api`.
-- Next.js 15 App Router frontend bootstrap for `@stellarcrop/web`.
+- Arkstack Express API bootstrap for `@silofi/api`.
+- Next.js 15 App Router frontend bootstrap for `@silofi/web`.
 - Domain models for Operator, Warehouse, Cooperative, Batch, BatchDocument, Investor, SettlementEvent, and RedemptionRequest.
 - Operator route declarations for Batch management, tokenization, Settlement, Redemption review, Cooperative management, document uploads, Investor allowlists, and TOML generation.
 - Investor route declarations for browsing Batches, purchasing tokens, requesting Redemption, and viewing portfolio holdings.
