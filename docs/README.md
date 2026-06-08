@@ -32,13 +32,13 @@
 | [KYC Integration](guides/kyc-integration.md)         | Implement or extend Sumsub, Persona, or manual KYC flows.                         |
 | [OpenAPI Specification](api/openapi.yaml)            | Inspect the REST API contract for Operator, Investor, and webhook routes.         |
 
-## What Is StellarCrop?
+## What Is SiloFi?
 
 African smallholder farmers often hold real economic assets in the form of stored crops, but they cannot easily borrow against them, attract investors, or sell fractional ownership. The missing piece is a trusted digital mechanism that represents physical commodity custody without forcing every buyer to inspect a warehouse receipt by hand.
 
-StellarCrop puts warehouse receipts on-chain using Stellar's native asset issuance. A warehouse operator registers a Batch, uploads the WarehouseReceipt, issues Stellar tokens for the commodity, and manages a KYC-gated Investor allowlist. When the commodity is sold, proceeds flow on-chain to every token holder.
+SiloFi puts warehouse receipts on-chain using Stellar's native asset issuance. A warehouse operator registers a Batch, uploads the WarehouseReceipt, issues Stellar tokens for the commodity, and manages a KYC-gated Investor allowlist. When the commodity is sold, proceeds flow on-chain to every token holder.
 
-StellarCrop is open source because this infrastructure should be auditable, self-hostable, and adaptable by cooperatives, warehouses, and agri-fintechs across Africa. Stellar is a strong fit because it offers sub-cent fees, 3-5 second finality, protocol-level compliance flags, USDC support, and native asset issuance without a smart contract. There is still no mature open-source infrastructure for this use case in Africa; StellarCrop aims to be that starting point.
+SiloFi is open source because this infrastructure should be auditable, self-hostable, and adaptable by cooperatives, warehouses, and agri-fintechs across Africa. Stellar is a strong fit because it offers sub-cent fees, 3-5 second finality, protocol-level compliance flags, USDC support, and native asset issuance without a smart contract. There is still no mature open-source infrastructure for this use case in Africa; SiloFi aims to be that starting point.
 
 ## How It Works
 
@@ -91,10 +91,10 @@ REGISTERED --> TOKENIZED --> ACTIVE --> SETTLED
 Browser + Freighter
         |
         v
-Next.js 15 frontend (@stellarcrop/web)
+Next.js 15 frontend (@silofi/web)
         |
         v
-Arkstack Express API (@stellarcrop/api)
+Arkstack Express API (@silofi/api)
         |
         +--> PostgreSQL via Arkormx
         +--> Stellar Horizon
@@ -122,8 +122,8 @@ Arkstack Express API (@stellarcrop/api)
 
 ```sh
 # Clone the repository.
-git clone https://github.com/your-org/stellarcrop.git
-cd stellarcrop
+git clone https://github.com/your-org/silofi.git
+cd silofi
 
 # Install all workspace dependencies.
 pnpm install
@@ -133,10 +133,10 @@ cp apps/api/.env.example apps/api/.env
 cp apps/web/.env.example apps/web/.env
 
 # Create the local PostgreSQL database.
-createdb stellarcrop
+createdb silofi
 
 # Run API migrations.
-pnpm --filter @stellarcrop/api ark migrate
+pnpm --filter @silofi/api ark migrate
 
 # Start both apps from the monorepo root.
 pnpm dev
@@ -147,7 +147,7 @@ The API runs on port `3000`. The web app runs on port `3001`.
 ## Project Structure
 
 ```text
-stellarcrop/
+silofi/
 ├── apps/
 │   ├── api/
 │   │   ├── src/app/          # Controllers, models, resources, middlewares
@@ -167,8 +167,8 @@ stellarcrop/
 
 ## Contributing
 
-StellarCrop needs backend engineers, frontend designers, Stellar builders, Rust/Soroban contributors, documentation writers, and people who understand agricultural operations. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
+SiloFi needs backend engineers, frontend designers, Stellar builders, Rust/Soroban contributors, documentation writers, and people who understand agricultural operations. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
 
 ## License
 
-StellarCrop is released under the MIT License. See [LICENSE](../LICENSE).
+SiloFi is released under the MIT License. See [LICENSE](../LICENSE).
