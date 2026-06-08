@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-StellarCrop is pre-1.0. Only the `main` branch is supported for security fixes.
+SiloFi is pre-1.0. Only the `main` branch is supported for security fixes.
 
 | Version              | Supported |
 | -------------------- | --------- |
@@ -12,7 +12,7 @@ StellarCrop is pre-1.0. Only the `main` branch is supported for security fixes.
 
 ## Reporting A Vulnerability
 
-Email security reports to `security@stellarcrop.dev`. Do not open a public GitHub Issue for vulnerabilities.
+Email security reports to `security@silofi.dev`. Do not open a public GitHub Issue for vulnerabilities.
 
 Include:
 
@@ -37,7 +37,7 @@ Reports involving the Stellar ledger state, Horizon, Freighter, Sumsub, Persona,
 
 In scope:
 
-- The StellarCrop monorepo codebase.
+- The SiloFi monorepo codebase.
 - Stellar transaction construction logic.
 - Soroban contract logic when implemented.
 - Document hashing and anchoring logic.
@@ -54,4 +54,4 @@ Out of scope:
 
 ## Safe Harbour
 
-Good-faith security research will not result in legal action from the StellarCrop maintainers. Stay within the scope above, avoid privacy violations, do not exfiltrate funds or data, and give maintainers reasonable time to patch before public disclosure.
+Good-faith security research will not result in legal action from the SiloFi maintainers. Stay within the scope above, avoid privacy violations, do not exfiltrate funds or data, and give maintainers reasonable time to patch before public disclosure.
