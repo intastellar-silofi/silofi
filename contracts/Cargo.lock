@@ -1490,7 +1490,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "stellarcrop-test-contract"
+name = "silofi-test-contract"
 version = "0.1.0"
 dependencies = [
  "soroban-sdk",
