@@ -5,7 +5,7 @@ resolver = "2"
 [workspace.package]
 edition = "2021"
 license = "MIT"
-repository = "https://github.com/intastellar/stellarcrop"
+repository = "https://github.com/intastellar-silofi/silofi"
 
 [workspace.dependencies]
 soroban-sdk = "=23.5.3"
