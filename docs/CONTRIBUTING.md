@@ -2,17 +2,17 @@
 
 ## Welcome
 
-StellarCrop is open-source infrastructure for tokenized warehouse receipts in African agriculture. You are helping build tools for farming cooperatives, agri-warehouses, commodity traders, and Investors who need a trustworthy way to finance stored crops.
+SiloFi is open-source infrastructure for tokenized warehouse receipts in African agriculture. You are helping build tools for farming cooperatives, agri-warehouses, commodity traders, and Investors who need a trustworthy way to finance stored crops.
 
 This project has real-world stakes. Many smallholder farmers have never had access to capital markets, even when they hold valuable commodities in storage. Your contribution can make that bridge more practical, transparent, and affordable.
 
 ## Code Of Conduct
 
-You are expected to follow a standard open-source code of conduct when participating in StellarCrop. A project-specific copy will live at [docs/CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Until then, use the Contributor Covenant as the baseline: be respectful, assume good intent, and keep discussions focused on the work.
+You are expected to follow a standard open-source code of conduct when participating in SiloFi. A project-specific copy will live at [docs/CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Until then, use the Contributor Covenant as the baseline: be respectful, assume good intent, and keep discussions focused on the work.
 
 ## Ways To Contribute
 
-Bug reports help you make StellarCrop reliable before real Operators and Investors depend on it. Include enough context for maintainers to reproduce the problem.
+Bug reports help you make SiloFi reliable before real Operators and Investors depend on it. Include enough context for maintainers to reproduce the problem.
 
 Feature proposals help shape the roadmap. Good proposals describe the user problem first, then suggest a solution.
 
@@ -52,8 +52,8 @@ Open a GitHub Discussion before starting large work. Explain the problem, who ex
 2. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-org/stellarcrop.git
-   cd stellarcrop
+   git clone https://github.com/your-org/silofi.git
+   cd silofi
    ```
 
 3. Install dependencies from the monorepo root:
@@ -72,7 +72,7 @@ Open a GitHub Discussion before starting large work. Explain the problem, who ex
 5. Fill the minimum required API variables:
 
    ```env
-   DATABASE_URL=postgresql://user:password@localhost:5432/stellarcrop
+   DATABASE_URL=postgresql://user:password@localhost:5432/silofi
    JWT_SECRET=replace-with-a-local-secret
    STELLAR_NETWORK=testnet
    STELLAR_HORIZON_URL=https://horizon-testnet.stellar.org
@@ -81,13 +81,13 @@ Open a GitHub Discussion before starting large work. Explain the problem, who ex
 6. Create the local database:
 
    ```sh
-   createdb stellarcrop
+   createdb silofi
    ```
 
 7. Run migrations:
 
    ```sh
-   pnpm --filter @stellarcrop/api ark migrate
+   pnpm --filter @silofi/api ark migrate
    ```
 
 8. Start the dev servers:
@@ -151,7 +151,7 @@ Vitest covers unit tests. The test suite is sparse at launch, so useful tests ar
 
 ## Code Style
 
-StellarCrop uses ESLint, Prettier, and TypeScript strict mode. Avoid `any`; model data explicitly with domain types. Follow [.eslintrc.cjs](../.eslintrc.cjs) and [.prettierrc](../.prettierrc). Run formatting before submitting:
+SiloFi uses ESLint, Prettier, and TypeScript strict mode. Avoid `any`; model data explicitly with domain types. Follow [.eslintrc.cjs](../.eslintrc.cjs) and [.prettierrc](../.prettierrc). Run formatting before submitting:
 
 ```sh
 pnpm format
