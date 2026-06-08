@@ -1,13 +1,11 @@
-# StellarCrop
+# SiloFi
 
 ```text
-  ____  _       _ _             ____
- / ___|| |_ ___| | | __ _ _ __ / ___|_ __ ___  _ __
- \___ \| __/ _ \ | |/ _` | '__| |   | '__/ _ \| '_ \
-  ___) | ||  __/ | | (_| | |  | |___| | | (_) | |_) |
- |____/ \__\___|_|_|\__,_|_|   \____|_|  \___/| .__/
-                                               |_|
-
+  ___ _ _     ___ _ 
+ / __(_) |___| __(_)
+ \__ \ | / _ \ _|| |
+ |___/_|_\___/_| |_|
+                    
  On-chain warehouse receipts for African agriculture.
 ```
 
@@ -23,8 +21,8 @@
 | [Contributing](CONTRIBUTING.md)                      | Set up a contributor workflow, open issues, or submit pull requests.              |
 | [Security](SECURITY.md)                              | Report vulnerabilities or understand the project security policy.                 |
 | [Changelog](CHANGELOG.md)                            | Track released and unreleased project changes.                                    |
-| [Getting Started](guides/getting-started.md)         | Run StellarCrop locally and walk through your first test Batch.                   |
-| [Self Hosting](guides/self-hosting.md)               | Deploy StellarCrop for a Cooperative, Warehouse, or agri-fintech.                 |
+| [Getting Started](guides/getting-started.md)         | Run SiloFi locally and walk through your first test Batch.                   |
+| [Self Hosting](guides/self-hosting.md)               | Deploy SiloFi for a Cooperative, Warehouse, or agri-fintech.                 |
 | [Registering A Batch](guides/registering-a-batch.md) | Create the off-chain record for a physical Commodity lot.                         |
 | [Tokenizing A Batch](guides/tokenizing-a-batch.md)   | Issue Stellar tokens for a registered Batch.                                      |
 | [Investor Onboarding](guides/investor-onboarding.md) | Understand KYC, purchasing, portfolio, Settlement, and Redemption as an Investor. |
