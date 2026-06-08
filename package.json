@@ -1,5 +1,5 @@
 {
-  "name": "stellarcrop",
+  "name": "silofi",
   "private": true,
   "scripts": {
     "build": "pnpm --recursive run build",
